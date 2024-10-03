@@ -12,7 +12,7 @@ A tool to keep track of the time spend in tasks related to projects
 -   Laravel 9
 -   Vue 2
 
-## Instructions
+## Setup Instructions
 
 -   You may run the commands "composer install" and "npm install" to install php and javascript dependencies
 -   Make the migration with php artisan migrate
@@ -23,3 +23,10 @@ A tool to keep track of the time spend in tasks related to projects
     php artisan key:generate
     php artisan passport:install
     php artisan config:clear
+
+## Use Instructions
+
+-   Create the users you need
+-   Create the teams
+-   Create the projects
+-   Report the time as needed
