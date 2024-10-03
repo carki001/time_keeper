@@ -14,6 +14,7 @@ A tool to keep track of the time spend in tasks related to projects
 
 ## Setup Instructions
 
+-   Setup you database connection with .env file
 -   You may run the commands "composer install" and "npm install" to install php and javascript dependencies
 -   Make the migration with php artisan migrate
 -   Check the the file "database\seeders\DatabaseSeeder.php" to check the default credentials
