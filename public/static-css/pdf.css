@@ -1,0 +1,47 @@
+.itb-pdf-left {
+    float: left;
+}
+
+.itb-pdf-right {
+    float: right;
+}
+
+.itb-pdf-table {
+    display: table;
+    width: 100%;
+}
+
+.itb-pdf-row {
+    display: table-row;
+    width: 100%;
+}
+
+.itb-pdf-cell-left {
+    display: table-cell;
+    width: 80%;
+}
+
+.itb-pdf-cell-right {
+    display: table-cell;
+    width: 20%;
+    text-align: right;
+}
+
+.itb-pdf-cell-left-worktime-report {
+    display: table-cell;
+    width: 16%;
+}
+
+.itb-pdf-cell-center-worktime-report {
+    display: table-cell;
+    width: 16%;
+}
+
+.itb-pdf-cell-right-worktime-report {
+    display: table-cell;
+    width: 20%;
+}
+
+.itb-worktime {
+    border-bottom: thin solid rgba(0, 0, 0, 0.12);
+}

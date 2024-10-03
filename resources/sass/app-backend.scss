@@ -1,0 +1,200 @@
+// Variables
+@import "variables-backend";
+
+.itb-subheadline {
+    color: rgb($blue, 0.7);
+    font-size: 1.1rem !important;
+    font-family: $font-family-popins !important;
+    margin-bottom: 0;
+}
+
+.itb-select-no-line.v-text-field > .v-input__control > .v-input__slot:before {
+    border-style: none;
+}
+.itb-select-no-line.v-text-field > .v-input__control > .v-input__slot:after {
+    border-style: none;
+}
+
+.v-input--switch.v-input:not(.v-input--is-loading) {
+    .v-input--switch__thumb,
+    .v-input--switch__track,
+    .v-input--selection-controls__ripple {
+        color: $red;
+    }
+}
+.itb-text-green {
+    color: $green;
+}
+
+.itb-text-red {
+    color: $red;
+}
+
+.v-input.itb-input-text {
+    .v-input__control {
+        input {
+            color: $warning_text;
+        }
+    }
+}
+
+.itb-tasks-titles {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+.itb-tasks-text {
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+}
+.itb-worktimes-text {
+    font-size: 0.875rem;
+}
+
+.v-data-iterator {
+    .v-toolbar__content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .v-expansion-panel-header {
+        padding-left: 0;
+    }
+
+    .v-expansion-panels {
+        border-bottom: thin solid rgba(0, 0, 0, 0.12);
+        transition: all 2s linear;
+
+        .v-expansion-panel {
+            border-top: thin solid rgba(0, 0, 0, 0.12);
+
+            .v-expansion-panel-header.itb-task-row-no-mobile {
+                height: 32px;
+                min-height: 24px;
+            }
+
+            .v-expansion-panel-content {
+                .v-expansion-panel-content__wrap {
+                    padding-left: 12px;
+
+                    .itb-worktime-row-mobile {
+                        border-top: thin solid rgba(0, 0, 0, 0.12);
+                    }
+
+                    .itb-worktime-row-no-mobile {
+                        height: 32px;
+                        min-height: 24px;
+                    }
+
+                    .itb-worktime-edition {
+                        padding-left: 6px;
+                        padding-right: 4px;
+                    }
+                }
+            }
+        }
+
+        .v-expansion-panel.v-expansion-panel--active.v-item--active {
+            background-color: $vuetify-blue-lighten-5;
+
+            .v-expansion-panel-header.v-expansion-panel-header--active {
+                background-color: $vuetify-blue-lighten-4;
+            }
+
+            .v-expansion-panel-header--active:before {
+                opacity: 0 !important;
+            }
+        }
+
+        .v-expansion-panel--active + .v-expansion-panel,
+        .v-expansion-panel--active:not(:first-child) {
+            margin-top: 0px;
+        }
+    }
+}
+
+header {
+    .itb-logo {
+        font-size: 1rem;
+    }
+}
+
+.itb-slogan {
+    color: #3a4750;
+    font-size: 0.8rem;
+    letter-spacing: 0.18rem;
+    font-weight: 800;
+}
+.v-input.itb-new-task-field {
+    margin-top: 14px;
+    .v-select__slot {
+        input {
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+    }
+}
+.v-input.itb-edit-task-field {
+    margin-top: 14px;
+}
+
+.v-picker.v-picker--time {
+    .v-time-picker-title {
+        justify-content: center;
+        .v-time-picker-title__time {
+            .v-picker__title__btn.v-picker__title__btn--active,
+            .v-picker__title__btn,
+            span {
+                height: 24px;
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+.v-picker {
+    .v-date-picker-title {
+        .v-picker__title__btn.v-date-picker-title__year {
+            justify-content: center;
+        }
+        .v-picker__title__btn.v-date-picker-title__date.v-picker__title__btn--active {
+            text-align: center;
+            font-size: 24px;
+        }
+    }
+}
+
+.v-select-list {
+    .v-list-item {
+        height: 32px !important;
+        min-height: 24px !important;
+    }
+}
+
+.itb-drawer-label {
+    background: rgb(0, 0, 0, 0.1);
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+
+    .v-icon {
+        zoom: 80%;
+        top: -1px;
+        left: 2px;
+    }
+}
+
+.itb-project-switch {
+    .v-input--selection-controls__input {
+        zoom: 85%;
+    }
+}
+
+//Works with vue directive, see resources\js\app-backend.js
+// .actions-hover-red {
+// background: $error-light !important;
+// }
+
+// .actions-hover-blue {
+// background: $primary-light !important;
+// }
