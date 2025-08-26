@@ -20,10 +20,11 @@ A tool to keep track of the time spend in tasks related to projects
 -   Check the the file "database\seeders\DatabaseSeeder.php" to check the default credentials
 -   Run the command php artisan db:seed
 -   Run the following commands:
-    php artisan passport:keys
-    php artisan key:generate
-    php artisan passport:install
-    php artisan config:clear
+    -   npm run watch
+    -   php artisan passport:keys
+    -   php artisan key:generate
+    -   php artisan passport:install
+    -   php artisan config:clear
 
 ## Use Instructions
 
